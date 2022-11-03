@@ -11,6 +11,7 @@ export class DefaultComponent implements OnInit {
 
   title='ng-carousel-demo';
 
+  //function for vendors
   customOptions: OwlOptions= {
     loop: true,
     margin: 30,
@@ -36,6 +37,7 @@ export class DefaultComponent implements OnInit {
       }
     }}
 
+  //function for team
   teamOptions: OwlOptions={
     autoplay: true,
     smartSpeed: 1000,
@@ -48,6 +50,31 @@ export class DefaultComponent implements OnInit {
       '<i class="fa fa-angle-left" aria-hidden="true"></i>',
       '<i class="fa fa-angle-right" aria-hidden="true"></i>'
     ],
+    responsive: {
+      0:{
+        items:1
+      },
+      576:{
+        items:1
+      },
+      768:{
+        items:2
+      },
+      992:{
+        items:3
+      }
+    }
+  }
+
+  //function for clients
+
+  clientOptions: OwlOptions={
+    autoplay: true,
+    smartSpeed: 1500,
+    margin: 30,
+    dots: true,
+    loop: true,
+    center: true,
     responsive: {
       0:{
         items:1

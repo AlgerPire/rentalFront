@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
   import {IndexComponent} from "./components/index/index.component";
   import {RentalComponent} from "./components/rental/rental.component";
   import {DefaultComponent} from "./components/default/default.component";
+  import {RefundComponent} from "./components/refund/refund.component";
 
 const routes: Routes = [
   {path:'index',component:IndexComponent},
   {path:'rental',component:RentalComponent},
+  {path:'refund',component:RefundComponent},
   {path:'',component:DefaultComponent}
 ];
 

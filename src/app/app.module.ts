@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DefaultComponent } from './components/default/default.component';
  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RefundComponent } from './components/refund/refund.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DefaultComponent } from './components/default/default.component';
     routingComponents,
     HeaderComponent,
     FooterComponent,
-    DefaultComponent
+    DefaultComponent,
+    RefundComponent
   ],
   imports: [
     BrowserModule,
