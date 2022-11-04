@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DefaultComponent } from './components/default/default.component';
  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RefundComponent } from './components/refund/refund.component';
+import { BookingComponent } from './components/booking/booking.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { RefundComponent } from './components/refund/refund.component';
     HeaderComponent,
     FooterComponent,
     DefaultComponent,
-    RefundComponent
+    RefundComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
