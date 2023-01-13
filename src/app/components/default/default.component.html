@@ -8,8 +8,8 @@
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
             <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-            <h1 class="display-1 text-white mb-md-4">Best Rental Cars In Your Location</h1>
-            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+            <h1 class="display-1 text-white mb-md-4">Best Rental Cars In Town</h1>
+            <a routerLink="/index" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
           </div>
         </div>
       </div>
@@ -18,8 +18,8 @@
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
             <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-            <h1 class="display-1 text-white mb-md-4">Quality Cars with Unlimited Miles</h1>
-            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+            <h1 class="display-1 text-white mb-md-4">Quality Cars of All Models</h1>
+            <a routerLink="/index" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
           </div>
         </div>
       </div>
@@ -86,141 +86,34 @@
     <h1 class="display-1 text-primary text-center">02</h1>
     <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
     <div class="row">
-      <div class="col-lg-4 col-md-6 mb-2">
+      <div class="col-lg-4 col-md-6 mb-2" *ngFor="let final of car">
         <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-1.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+          <img class="img-fluid mb-4" src="{{final.imageUrl}}" alt="">
+          <h4 class="text-uppercase mb-4">{{final.model}}</h4>
           <div class="d-flex justify-content-center mb-4">
             <div class="px-2">
               <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
+              <span>{{final.brand}}</span>
             </div>
             <div class="px-2 border-left border-right">
               <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
+              <span>{{final.gearbox}}</span>
             </div>
             <div class="px-2">
               <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
+              <span>{{final.mileage}} km/h</span>
             </div>
           </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+          <a class="btn btn-primary px-3" href="">${{final.feePerDay}}/Day</a>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item active mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-2.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-3.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-4.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-5.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-6.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-
-      </div>
-
     </div>
     <div class="container text-center" >
       <a routerLink="index" class="btn btn-secondary py-md-3 px-md-5 mt-2" >Show More</a>
     </div>
   </div>
 
-</div>
 
 <!-- Rent A Car End -->
 
@@ -435,14 +328,14 @@
             <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
             <div class="mt-n1">
               <h5 class="text-light">Head Office</h5>
-              <p>123 Street, New York, USA</p>
+              <p>Torre Drin, Tirana, 1010 , Albania</p>
             </div>
           </div>
           <div class="d-flex mb-3">
             <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
             <div class="mt-n1">
               <h5 class="text-light">Branch Office</h5>
-              <p>123 Street, New York, USA</p>
+              <p>Rruga Elbasanit, 1001, Tirana, Albania</p>
             </div>
           </div>
           <div class="d-flex mb-3">
@@ -528,7 +421,6 @@
         </div>
       </ng-template>
     </owl-carousel-o>
-
   </div>
 </div>
 <!-- Vendor End -->

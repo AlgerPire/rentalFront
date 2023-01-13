@@ -11,7 +11,8 @@ const routes: Routes = [
   {path:'rental',component:RentalComponent},
   {path:'refund',component:RefundComponent},
   {path:'booking',component:BookingComponent},
-  {path:'',component:DefaultComponent}
+  {path:'',component:DefaultComponent},
+
 ];
 
 @NgModule({

@@ -9,6 +9,7 @@ import { DefaultComponent } from './components/default/default.component';
  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RefundComponent } from './components/refund/refund.component';
 import { BookingComponent } from './components/booking/booking.component';
+ import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -19,13 +20,14 @@ import { BookingComponent } from './components/booking/booking.component';
     FooterComponent,
     DefaultComponent,
     RefundComponent,
-    BookingComponent
+    BookingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

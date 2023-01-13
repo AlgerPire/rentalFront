@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
+import {CarDTO} from "../../CarDTO";
+import {Router} from "@angular/router";
+import {CarDTOServiceService} from "../../carDTO-service.service";
 
 
 @Component({
@@ -92,9 +95,19 @@ export class DefaultComponent implements OnInit {
   }
 
 
-  constructor() { }
+  car: CarDTO[];
+
+  constructor(private router: Router, private carService: CarDTOServiceService) {
+  }
+
+  findDto() {
+    this.carService.findDto().subscribe(data => {
+      this.car = data;
+    });
+  }
 
   ngOnInit(): void {
+    this.findDto();
   }
 
 }

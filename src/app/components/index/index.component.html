@@ -9,138 +9,34 @@
 </div>
 <!-- Page Header Start -->
 
+
+
 <!-- Rent A Car Start -->
-<div class="container-fluid py-5">
+<div class="container-fluid py-5" >
   <div class="container pt-5 pb-3">
     <h1 class="display-1 text-primary text-center">ALL MODELS</h1>
     <h1 class="display-4 text-uppercase text-center mb-5">LIST</h1>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-2">
+    <div class="row" >
+      <div class="col-lg-4 col-md-6 mb-2" *ngFor="let final of car">
         <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-1.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+          <img class="img-fluid mb-4" src="{{final.imageUrl}}" alt="">
+          <h4 class="text-uppercase mb-4">{{final.model}}</h4>
           <div class="d-flex justify-content-center mb-4">
             <div class="px-2">
               <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
+              <span>{{final.brand}}</span>
             </div>
             <div class="px-2 border-left border-right">
               <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
+              <span>{{final.gearbox}}</span>
             </div>
             <div class="px-2">
               <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
+              <span>{{final.mileage}} KM/h</span>
             </div>
           </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+          <a class="btn btn-primary px-3" href="">${{final.feePerDay}}/Day</a>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item active mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-2.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-3.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-4.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-5.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-2">
-        <div class="rent-item mb-4">
-          <img class="img-fluid mb-4" src="./assets/img/car-rent-6.png" alt="">
-          <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-          <div class="d-flex justify-content-center mb-4">
-            <div class="px-2">
-              <i class="fa fa-car text-primary mr-1"></i>
-              <span>2015</span>
-            </div>
-            <div class="px-2 border-left border-right">
-              <i class="fa fa-cogs text-primary mr-1"></i>
-              <span>AUTO</span>
-            </div>
-            <div class="px-2">
-              <i class="fa fa-road text-primary mr-1"></i>
-              <span>25K</span>
-            </div>
-          </div>
-          <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-        </div>
-
       </div>
 
     </div>
@@ -222,7 +118,7 @@
           </div>
         </div>
       </ng-template>
-      <ng-template carouselSlide>
+      <ng-template carouselSlide >
         <div class="slide">
           <div class="bg-light p-4">
             <img src="./assets/img/vendor-6.png" alt="">
@@ -244,7 +140,6 @@
         </div>
       </ng-template>
     </owl-carousel-o>
-
   </div>
 </div>
 <!-- Vendor End -->
