@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
 import {CarDTO} from "../../CarDTO";
 import {Router} from "@angular/router";
@@ -46,6 +46,7 @@ export class IndexComponent implements OnInit {
   findDto() {
     this.carService.findDto().subscribe(data => {
       this.car = data;
+      console.log(data);
     });
   }
 

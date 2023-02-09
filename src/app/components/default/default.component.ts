@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
 import {CarDTO} from "../../CarDTO";
 import {Router} from "@angular/router";
